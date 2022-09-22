@@ -1,0 +1,38 @@
+.robotRemoveModalWrapper {
+  padding-bottom: var(--space-8);
+  width: 100%;
+}
+
+.robotRemoveModalCopy {
+  margin-top: 0;
+}
+
+.robotRemoveModalActions {
+  display: flex;
+  gap: var(--space-16);
+  margin-top: var(--space-24);
+}
+
+.robotRemoveModalButton {
+  color: var(--color-light);
+  height: 32px;
+  padding: 0;
+}
+
+.robotRemoveModalButton:first-of-type .robotRemoveModalButtonContent {
+  background-color: red;
+}
+
+.robotRemoveModalButton:focus .robotRemoveModalButtonContent,
+.robotRemoveModalButton:hover .robotRemoveModalButtonContent {
+  background-color: var(--color-border-light);
+}
+
+.robotRemoveModalButtonContent {
+  align-items: center;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--space-32);
+  display: flex;
+  height: 32px;
+  padding: var(--space-16);
+}

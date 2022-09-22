@@ -1,0 +1,100 @@
+.robotCard {
+  border-radius: var(--space-8);
+  border: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.robotCardSmall {
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  transition: background-color 200ms ease, transform 200ms ease;
+  will-change: background-color, transform;
+}
+
+.robotCardIconWrapper {
+  padding: var(--space-32) var(--space-16);
+}
+
+.robotCardSmall .robotCardIconWrapper {
+  padding: var(--space-16);
+}
+
+.robotCardIcon {
+  fill: var(--color-light);
+}
+
+.robotCardMetaWrapper {
+  background-color: var(--color-black-alpha);
+  border-bottom-left-radius: var(--space-8);
+  border-bottom-right-radius: var(--space-8);
+  flex: 1;
+  padding: var(--space-12);
+  position: relative;
+}
+
+.robotCardMetaTitle {
+  font-size: 18px;
+  margin: 0 0 var(--space-8);
+}
+
+.robotCardRemoveButton {
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  right: var(--space-12);
+  top: var(--space-12);
+  width: 24px;
+}
+
+.robotCardRemoveButton:focus .robotCardRemoveButtonContent,
+.robotCardRemoveButton:hover .robotCardRemoveButtonContent {
+  background-color: var(--color-border-light);
+}
+
+.robotCardRemoveButtonContent {
+  align-items: center;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.robotCardRemoveButtonIcon {
+  fill: var(--color-light);
+  height: 18px;
+  width: 18px;
+}
+
+.robotCardMetaInfo {
+  color: var(--color-light-accent);
+  font-size: 14px;
+  width: 100%;
+}
+
+.robotCardMetaInfoItem {
+  margin-top: var(--space-4);
+}
+
+.robotCardMetaInfoLabel {
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (min-width: 768px) {
+  .robotCardSmall:hover {
+    background-color: rgba(232 234 237 / 10%);
+    transform: translateY(-4px);
+  }
+
+  .robotCardMetaWrapper {
+    padding: var(--space-16);
+  }
+
+  .robotCardRemoveButton {
+    right: var(--space-16);
+    top: var(--space-16);
+  }
+}

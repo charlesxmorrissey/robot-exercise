@@ -1,0 +1,47 @@
+.robotsListWrapper {
+  display: grid;
+  width: 100%;
+}
+
+.robotsListContainer {
+  display: grid;
+  grid-gap: var(--space-12);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.robotsListAddButton {
+  align-items: center;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  bottom: var(--space-16);
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  position: fixed;
+  right: var(--space-16);
+  width: 64px;
+  z-index: 1;
+}
+
+.robotsListAddButton:focus,
+.robotsListAddButton:hover {
+  background-color: var(--color-border-light);
+}
+
+.robotsListAddButtonIcon {
+  fill: var(--color-light-accent);
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 768px) {
+  .robotsListContainer {
+    grid-gap: var(--space-16);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .robotsListAddButton {
+    bottom: var(--space-32);
+    right: var(--space-32);
+  }
+}
