@@ -23,7 +23,7 @@ const App = () => (
       </div>
 
       <footer className={styles.appFooterWrapper}>
-        <div className={styles.appHeaderContainer}>Robot Exercise - Take Home Test {new Date().getFullYear()}</div>
+        <div className={styles.appFooterWrapper}>Robot Exercise - Take Home Test {new Date().getFullYear()}</div>
       </footer>
     </main>
   </AppProvider>
